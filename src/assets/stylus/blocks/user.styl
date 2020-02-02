@@ -1,0 +1,68 @@
+.user {
+    display flex
+    justify-content flex-end
+    align-items center
+    position relative
+    &:after {
+        content ''
+        width 1px
+        height 30px
+        background #E4E4E4
+        position absolute
+        right 30px
+        top 4px
+        @media screen and (max-width: 1200px) {
+            right 22px
+            top 2px
+        }
+    }
+    &__link {
+        display flex
+        align-items center
+        text-decoration none
+        color $darkText
+    }
+    &__avatar {
+        width 36px
+        height @width
+        border-radius 50%
+        background url('/assets/img/user__avatar.png') center center no-repeat
+        background-size cover
+        box-shadow 0px 2px 10px rgba(6, 1, 16, 0.15)
+        margin-right 8px
+        @media screen and (max-width: 1200px) {
+            width 32px
+            height @width
+            margin-right 6px
+        }
+    }
+    &__name {
+        font-family $SSP
+        font-weight 400
+        font-size $textXs
+        color $darkText
+        transform scaleY(1.1)
+        @media screen and (max-width: 1200px) {
+            font-size @font-size - 2px
+        }
+    }
+    &__logout {
+        width 16px
+        height 14px
+        position relative
+        margin-left 30px
+        &:after {
+            content ''
+            width 16px
+            height 14px
+            background url('/assets/img/logout.png') center center no-repeat
+            background-size contain
+            position absolute
+            top 0
+            left 0
+        }
+        @media screen and (max-width: 1200px) {
+            margin-left 20px
+        }
+    }
+}

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+        <title>Главная</title>
+        <style>
+            html {
+                background-repeat: no-repeat;
+                background-position:  50% 0;
+                background-image: url( "assets/img/main-notif.png" );
+                background-size: cover;
+            }
+            body {
+                opacity: .5;
+            }
+        </style>
+    </head>
+    <body class="page">
+
+        <div class="page__content">
+
+            <!-- Notification -->
+            <div class="page__notification notification">
+                <div class="notification__inner  notification__inner_icon_document">
+
+                    <div class="notification__info">
+                        <h3 class="notification__title">
+                            Добавлен новый документ, обязательно для ознакомления!
+                        </h3>
+                        <h4 class="notification__subtitle">
+                            Название документа в несколько десятков символов.
+                        </h4>
+                    </div>
+
+                    <div class="notification__buttons">
+                        <a class="notification__button notification__button_icon_download button" href="/">
+                            Скачать документ
+                        </a>
+                        <button class="notification__button notification__button_done button button_background_pink" type="button">
+                            Я ознакомился(лась)
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Header -->
+            <header class="page__header header">
+                <div class="header__inner">
+
+                    <div class="header__logo">
+                      
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a class="logo__link" href="/" title="На главную страницу">
+                                <img class="logo__img" src="/assets/img/logo.png">
+                            </a>
+                        </div>
+
+                    </div>
+                
+                    <div class="header__menu">
+                      
+                        <!-- Navigation -->
+                        <ul class="menu">
+
+                            <li class="menu__item">
+                                <a href="/" class="menu__link">Справочник</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/" class="menu__link">Презентации </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/" class="menu__link">Новости</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/" class="menu__link">Бюллетень</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/" class="menu__link">Документы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/" class="menu__link">Для сотрудников</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                  
+                    <div class="header__user">
+                      
+                        <!-- User -->
+                        <div class="user">
+                            <a href="/" class="user__link">
+                                <div class="user__avatar"></div>
+                                <div class="user__name">Екатерина Васильева</div>
+                            </a>
+                            <a class="user__logout" href="/"></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- Section "Welcome" -->
+            <section class="page__welcome welcome">
+                <div class="welcome__inner">
+
+                    <div class="welcome__info">
+                        <h2 class="welcome__title">Добро пожаловать <br> в команду!</h2>
+                        <h4 class="welcome__subtitle">Тематический дескриптор <br> в 3 строки максимум</h4>
+                    </div>
+
+                    <div class="welcome__img"></div>
+                </div>
+            </section>
+
+            <!-- News -->
+            <section class="page__news news">
+                <div class="news__inner">
+
+                    <div class="news__header">
+                        <h2 class="news__heading">Новости компании</h2>
+                        <a class="news__more" href="/">Перейти ко всем новостям</a>
+                    </div>
+            
+                    <div class="news__row">
+              
+                        <div class="news__item">
+                            <a class="news__link" href="/">
+                                <div class="news__banner">
+                                    <img class="news__img" src="assets/img/news_1.png">
+                                </div>
+                                <h3 class="news__title">Обновление реквизитов</h3>
+                            </a>
+                            <p class="news__description">
+                                «АСК Инжиниринг» присвоен новый КПП в связи с постановкой 
+                                на учет в качестве крупнейшего налогоплательщика.
+                            </p>
+                            <span class="news__date">3 ноября 2018</span>
+                        </div>       
+                      
+                        <div class="news__item">
+                            <a class="news__link" href="/">
+                                <div class="news__banner">
+                                    <img class="news__img" src="assets/img/news_2.png">
+                                </div>
+                                <h3 class="news__title">Отчёт о финансово-хозяйственной деятельности</h3>
+                            </a>
+                            <p class="news__description">
+                                Отчёт на 1 июля 2016 года. <br> Обновление текущих проектов компании.
+                            </p>
+                            <span class="news__date">29 октября 2018</span>
+                        </div>
+                      
+                        <div class="news__item">
+                            <a class="news__link" href="/">
+                                <div class="news__banner">
+                                    <img class="news__img" src="assets/img/news_3.png">
+                                </div>
+                                <h3 class="news__title">Открытие нового ОП</h3>
+                            </a>
+                            <p class="news__description">
+                                С 1 апреля начало работу новое обособленное подразделение 
+                                АСК Инжиниринг в городе Санкт-Петербурге.
+                            </p>
+                            <span class="news__date">25 октября 2018</span>
+                        </div>
+              
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Feedback form -->
+            <section class="page__feedback feedback">
+
+                <div class="feedback__description">
+                    <div class="feedback__caption">
+                        <h2 class="feedback__title">Есть вопросы?</h2>
+                        <h4 class="feedback__subtitle">Текстовое описание того, что это за форма и как работает</h4>
+                    </div>
+                </div>
+
+                <div class="feedback__form">
+                    <form class="feedback__inputs" action="#">
+
+                        <div class="feedback__row">
+
+                            <div class="feedback__col">
+                                <div class="feedback__field field">
+                                    <label class="feedback__label label" for="input_1">ФИО</label>
+                                    <input class="feedback__input input-custom" id="input_1" type="text" placeholder="Иванов Иван Иванович">
+                                </div>
+                            </div>
+
+                            <div class="feedback__col">
+                                <div class="feedback__field field">
+                                    <label class="feedback__label label" for="input_2">Email</label>
+                                    <input class="feedback__input input-custom" id="input_2" type="email" placeholder="ivanoff@scadtech@.ru">
+                                </div>
+                            </div>
+
+                            <div class="feedback__col">
+                                <div class="feedback__field field">
+                                    <label class="feedback__label label" for="select">Тема обращения</label>
+                                    <div class="field__inner field__inner_icon_select">
+                                        <select class="feedback__select select-custom" name="topic" id="select">
+                                            <option class="select-custom__option" value="1">Вопросы и предложения</option>
+                                            <option class="select-custom__option" value="2">Другая тема</option>
+                                            <option class="select-custom__option" value="3">Еще одна тема</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="feedback__col">
+                            <div class="feedback__field field">
+                                <label class="feedback__label label" for="question">Текст обращения</label>
+                                <textarea class="feedback__textarea textarea-custom" name="textarea" id="question"></textarea>
+                            </div>
+                        </div>
+                        <input class="feedback__submit button button_background_pink" id="formSubmit" type="submit" value="Отправить">
+
+                    </form>
+                </div>
+
+            </section>
+
+            <!-- Birthdays -->
+            <section class="page__birthdays birthdays">
+
+                <div class="birthdays__heading">
+                    <h2 class="birthdays__title">Ближайшие дни рождения</h2>
+                    <h4 class="birthdays__subtitle">Не забудьте поздравить коллег</h4>
+                </div>
+
+                <div class="birthdays__grid">
+
+                    <!-- Employee Information -->
+                    <a class="birthdays__card employee-card" href="/">
+
+                        <div class="employee-card__top">
+                            <img class="employee-card__photo" src="assets/img/employee_1.png">
+                            <span class="employee-card__name">Иванова Елизавета Васильевна</span>
+                            <span class="employee-card__position">Директор по развитию</span>
+                        </div>
+
+                        <div class="employee-card__bottom">
+                            <span class="employee-card__department">Департамент информационных технологий</span>
+                            <span class="employee-card__birthdate">12 ноября</span>
+                        </div>
+
+                    </a>
+
+                    <a class="birthdays__card employee-card" href="/">
+
+                        <div class="employee-card__top">
+                            <img class="employee-card__photo" src="assets/img/employee_2.png">
+                            <span class="employee-card__name">Степанов Сергей Викторович</span>
+                            <span class="employee-card__position">Финансовый директор</span>
+                        </div>
+
+                        <div class="employee-card__bottom">
+                            <span class="employee-card__department">Департамент систем учета электроэнергии</span>
+                            <span class="employee-card__birthdate">13 ноября</span>
+                        </div>
+
+                    </a>
+
+                    <a class="birthdays__card employee-card" href="/">
+
+                        <div class="employee-card__top">
+                            <img class="employee-card__photo" src="assets/img/employee_3.png">
+                            <span class="employee-card__name">Иванов Пётр Дмитриевич</span>
+                            <span class="employee-card__position">Системный инженер</span>
+                        </div>
+
+                        <div class="employee-card__bottom">
+                            <span class="employee-card__department">Департамент информационных технологий</span>
+                            <span class="employee-card__birthdate">13 ноября</span>
+                        </div>
+
+                    </a>
+
+                    <a class="birthdays__card employee-card" href="/">
+
+                        <div class="employee-card__top">
+                            <img class="employee-card__photo" src="assets/img/employee_1.png">
+                            <span class="employee-card__name">Иванова Елизавета Васильевна</span>
+                            <span class="employee-card__position">Директор по развитию</span>
+                        </div>
+
+                        <div class="employee-card__bottom">
+                            <span class="employee-card__department">Департамент систем учета электроэнергии</span>
+                            <span class="employee-card__birthdate">12 ноября</span>
+                        </div>
+
+                    </a>
+
+                    <a class="birthdays__card employee-card" href="/">
+
+                        <div class="employee-card__top">
+                            <img class="employee-card__photo" src="assets/img/employee_2.png">
+                            <span class="employee-card__name">Степанов Сергей Викторович</span>
+                            <span class="employee-card__position">Финансовый директор</span>
+                        </div>
+
+                        <div class="employee-card__bottom">
+                            <span class="employee-card__department">Департамент информационных технологий</span>
+                            <span class="employee-card__birthdate">13 ноября</span>
+                        </div>
+
+                    </a>
+
+                    <a class="birthdays__card employee-card" href="/">
+
+                        <div class="employee-card__top">
+                            <img class="employee-card__photo" src="assets/img/employee_1.png">
+                            <span class="employee-card__name">Иванова Елизавета Васильевна</span>
+                            <span class="employee-card__position">Директор по развитию</span>
+                        </div>
+
+                        <div class="employee-card__bottom">
+                            <span class="employee-card__department">Департамент систем учета электроэнергии</span>
+                            <span class="employee-card__birthdate">12 ноября</span>
+                        </div>
+
+                    </a>
+
+                    <a class="birthdays__card employee-card" href="/">
+
+                        <div class="employee-card__top">
+                            <img class="employee-card__photo" src="assets/img/employee_3.png">
+                            <span class="employee-card__name">Иванов Пётр Дмитриевич</span>
+                            <span class="employee-card__position">Системный инженер</span>
+                        </div>
+
+                        <div class="employee-card__bottom">
+                            <span class="employee-card__department">Департамент информационных технологий</span>
+                            <span class="employee-card__birthdate">13 ноября</span>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="page__footer footer">
+            <div class="footer__inner">
+
+                <div class="footer__copy">©2002-2018 Группа компаний SCAD tech</div>
+
+                <!-- Logos -->
+                <div class="footer__logos">
+
+                    <a class="footer__link" href="/">
+                        <img class="footer__logo footer__logo_scad" src="assets/img/footer__logo-1.png">
+                    </a>
+
+                    <a class="footer__link" href="/">
+                        <img class="footer__logo footer__logo_nexus" src="assets/img/footer__logo-2.png">
+                    </a>
+
+                    <a class="footer__link" href="/">
+                        <img class="footer__logo footer__logo_ack" src="assets/img/footer__logo-3.png">
+                    </a>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- Modal window -->
+        <div class="modal-window" style="display: none;">
+            <div class="modal-window__content box-modal" id="exampleModal">
+                <div class="modal-window__close box-modal_close arcticmodal-close"></div>
+                <div class="modal-window__check"></div>
+                <h2 class="modal-window__title">Ваше обращение отправлено!</h2>
+                <h4 class="modal-window__subtitle">Ожидайте ответа на ваш email</h4>
+            </div>
+        </div>
+
+    </body>
+</html>

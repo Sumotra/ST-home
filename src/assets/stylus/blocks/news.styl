@@ -1,0 +1,174 @@
+.news {
+    width 100%
+    position relative
+    &:before {
+        content ''
+        position absolute
+        width 100%
+        background $lightGrayBackground
+        top 0
+        height 188px
+        z-index -20
+        @media screen and (max-width: 1200px) {
+            height 130px
+        }
+    }
+    &__inner {
+        width (1180/1920*100)%
+        margin 0 auto
+        padding-top 52px
+        @media screen and (max-width: 1440px) {
+            width 70%
+            padding-top 40px
+        }
+    }
+    &__header {
+        display flex
+        justify-content space-between
+        align-items flex-end
+        width 100%
+        margin-bottom 34px
+        @media screen and (max-width: 1440px) {
+            margin-bottom 26px
+        }
+    }
+    &__heading {
+        font-family $Roboto
+        font-weight 700
+        color $darkText
+        font-size $textLg
+        margin 0
+        position relative
+        @media screen and (max-width: 1200px) {
+            font-size @font-size - 6px
+        }
+    }
+    &__more {
+        font-family $SSP
+        font-weight 400
+        font-size $textSm
+        color $grayText
+        text-decoration none
+        padding-right 30px
+        position relative
+        display flex
+        align-items center
+        margin 0 0 -3px
+        &:after {
+            content ''
+            background url('/assets/img/arrow-right.png') right center no-repeat
+            width 20px
+            height 16px
+            position absolute
+            right 0
+        }
+        @media screen and (max-width: 1440px) {
+            font-size @font-size - 2px
+        }
+        @media screen and (max-width: 1200px) {
+            margin 0
+        }
+    }
+    &__row {
+        display flex
+        justify-content space-between
+        position relative
+        width 100%
+    }
+    &__item {
+        flex-basis (380/1180*100)%
+        position relative
+    }
+    &__item:last-child .news__banner:before {
+        content ''
+        width 100px
+        height @width
+        background url('/assets/img/dots.png') center center no-repeat
+        background-size contain
+        position absolute
+        right -82px 
+        bottom 2px
+        z-index -10
+        @media screen and (max-width: 1440px) {
+            width 75px
+            height @width
+            right -67px
+        }
+    }
+    &__link {
+        text-decoration none
+        &:hover {
+            .news__banner:after {
+                background-color rgba(242, 38, 77, 0.5)
+            }
+            .news__title {
+              color $mainPink
+            }
+        }
+    }
+    &__link_hovered {
+        text-decoration none
+        .news__banner:after {
+            background-color rgba(242, 38, 77, 0.5)
+        }
+        .news__title {
+            color $mainPink
+        }
+    }
+    &__banner {
+        padding 0
+        margin 0
+        position relative
+        &:after {
+            content ''
+            background-color rgba(242, 38, 77, 0)
+            position absolute
+            top 0
+            right 0
+            bottom 4px
+            left 0
+            transition all .5s
+        }
+    }
+    &__img {
+        width 100%
+    }
+    &__title {
+        font-family $Roboto
+        font-weight 500
+        font-size $textMd
+        line-height @font-size + 6px
+        color $darkText
+        margin 16px 0 16px 19px
+        @media screen and (max-width: 1440px) {
+            margin 8px 0 10px 10px
+            font-size @font-size - 4px
+            line-height @line-height - 4px
+        }
+    }
+    &__description {
+        font-family $SSP
+        font-weight 400
+        font-size $textXs
+        line-height @font-size + 4px
+        width 79%
+        transform scaleY(1.1)
+        margin 14px 0 20px 19px
+        @media screen and (max-width: 1440px) {
+            font-size @font-size - 2px
+            line-height @line-height - 2px
+            margin 6px 0 8px 10px
+        }
+    }
+    &__date {
+        font-family $SSP
+        font-weight 400
+        font-size $textXs
+        color $lightText
+        margin 0 0 0 19px
+        @media screen and (max-width: 1440px) {
+            font-size @font-size - 2px
+            margin-left 10px
+        }
+    }
+}

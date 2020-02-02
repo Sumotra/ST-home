@@ -1,0 +1,61 @@
+.modal-window {
+    display none
+    &__content {
+        padding 44px 49px
+        background-color #FFFFFF
+        border-radius 1px
+        position relative
+        width (580 - 49*2)*1px
+        height (300 - 44*2)*1px
+        @media screen and (max-width: 1440px) {
+            padding 32px 36px
+            width 420px
+            height 180px
+        }
+    }
+    &__close {
+        position absolute
+        cursor pointer
+        top 15px
+        right -42px
+        width 22px
+        height @width
+        background url('/assets/img/modal-close.png') center center no-repeat
+        background-size contain
+    }
+    &__check {
+        width 100px
+        height 72px
+        background url('/assets/img/modal-check.png') top left no-repeat
+        background-size contain
+        margin-bottom 46px
+        @media screen and (max-width: 1440px) {
+            width 80px
+            height 58px
+            margin-bottom 34px
+        }
+    }
+    &__title {
+        font-family $Roboto
+        font-weight 700
+        font-size $textLg
+        line-height 66px
+        color $darkText
+        margin 0
+        @media screen and (max-width: 1440px) {
+            font-size @font-size - 4px
+            line-height @line-height - 10px
+        }
+    }
+    &__subtitle {
+        font-family $SSP
+        font-weight 400
+        font-size $textSm
+        line-height $textSm + 6px
+        color $grayText
+        margin 0
+        @media screen and (max-width: 1440px) {
+            line-height @line-height - 4px
+        }
+    }
+}

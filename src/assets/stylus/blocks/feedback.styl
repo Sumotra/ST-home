@@ -1,0 +1,174 @@
+.feedback {
+    width 100%
+    height 500px
+    display flex
+    position relative
+    &:before
+    &:after {
+        content ''
+        width 100px
+        height @width
+        background url('/assets/img/dots.png') center center no-repeat
+        background-size contain
+        position absolute
+        @media screen and (max-width: 1440px) {
+            width 75px
+            height @width
+        }
+    }
+    &:before {
+        top -100px
+        left 7%
+        @media screen and (max-width: 1440px) {
+            top -75px
+        }
+    }
+    &:after {
+        bottom -100px
+        left 0
+        @media screen and (max-width: 1440px) {
+            bottom -75px
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        height @height - 80px
+    }
+    &__description {
+        flex-basis (750/1920*100)%
+        background-color $mainPink
+        position relative
+        overflow hidden
+        &:after {
+            content '?'
+            font-family $Roboto
+            font-size 400px
+            line-height 66px
+            font-weight 700
+            color #E22C47
+            position absolute
+            right -75px
+            bottom 112px
+            @media screen and (max-width: 1200px) {
+                font-size 330px
+                right -60px
+                bottom 84px
+            }
+        }
+        @media screen and (max-width: 1440px) {
+            flex-basis 35%
+        }
+    }
+    &__caption {
+        width 240px
+        position absolute
+        right 18.8%  
+        top 10%
+        @media screen and (max-width: 1200px) {
+            width @width - 30px
+            right 10%
+        }
+    }
+    &__title {
+        font-family $Roboto
+        font-weight 700
+        font-size $textLg
+        line-height 42px
+        color #FFFFFF
+        margin 0 0 14px
+        @media screen and (max-width: 1200px) {
+            font-size @font-size - 6px
+            line-height @line-height - 8px
+        }
+    }
+    &__subtitle {
+        font-family $SSP
+        font-weight 400
+        font-size $textSm
+        color #FFFFFF
+        line-height $textSm + 6px
+        margin 0
+        @media screen and (max-width: 1200px) {
+            font-size @font-size - 2px
+        }
+    }
+    &__form {
+        flex-basis (1170/1920*100)%
+        background $lightGrayBackground
+        position relative
+        &:after {
+            content ''
+            width 300px
+            height 100px
+            background url('/assets/img/dots.png') center center repeat-x
+            background-size contain
+            position absolute
+            bottom 0
+            right 6.15%
+            @media screen and (max-width: 1440px) {
+                width 225px
+                height 75px
+            }
+        }
+        @media screen and (max-width: 1440px) {
+            flex-basis 65%
+        }
+    }
+    &__inputs {
+        display flex
+        justify-content flex-start
+        flex-direction column
+        margin 54px 40px 0 69px
+        @media screen and (max-width: 1200px) {
+            margin 38px 25px 0 38px
+        }
+    }
+    &__row {
+        display flex
+        justify-content space-between
+        width 731px
+        margin-bottom 26px
+        @media screen and (max-width: 1200px) {
+            width @width - 145px
+        }
+    }
+    &__col {
+        margin 0
+        padding 0
+    }
+    &__field {
+        flex-direction column
+    }
+    &__label {
+        padding-left 22px
+        margin-bottom 12px
+    }
+    &__input {
+        width 230px
+        @media screen and (max-width: 1200px) {
+            width @width - 50px
+        }
+    }
+    &__select {
+        width 231px
+        @media screen and (max-width: 1200px) {
+            width @width - 40px
+        }
+    }
+    &__textarea {
+        width 731px
+        height 150px
+        @media screen and (max-width: 1200px) {
+            width @width - 145px
+            height @height - 20px
+        }
+    }
+    &__submit {
+        width 220px
+        height 46px
+        border none
+        margin-top 38px
+        @media screen and (max-width: 1200px) {
+            width @width - 40px
+        }
+    }
+}

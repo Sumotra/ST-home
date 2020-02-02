@@ -1,0 +1,34 @@
+.select-custom {
+    height 45px
+    font-family $SSP
+    font-weight 400
+    font-size $textXs
+    color $darkText
+    padding-left 20px
+    border 1px solid rgba(201, 200, 204, 0.2)
+    box-sizing border-box
+    background transparent
+    position relative
+    appearance none
+    cursor pointer
+    &:hover {
+        border-color $grayText
+    }
+    &:focus {
+        background #FFFFFF
+        outline none
+        border-color $grayText
+    }
+    &::-ms-expand {
+        display none
+    }
+    @media screen and (max-width: 1200px) {
+        font-size @font-size - 2px
+        padding-left @padding-left - 10px
+        height @height - 10px
+    }
+    &__option:checked {
+        background-color $mainPink
+        color #FFFFFF
+    }
+}

@@ -1,0 +1,35 @@
+.header {
+    width 100%
+    border-bottom 1px solid #EFEFEF
+    font-family $SSP
+    font-weight 400
+    font-size $textXs
+    color $darkText
+    &__inner {
+        display flex
+        justify-content space-between
+        align-items center
+        height 100px
+        margin-right (371/1920*100)%
+        margin-left (197/1920*100)%
+        width 100% - @margin-left - @margin-right
+        @media screen and (max-width: 1440px) {
+            margin-right 15%
+            margin-left 5%
+            width 100% - @margin-left - @margin-right
+        }
+        @media screen and (max-width: 1200px) {
+            height 80px
+        }
+    }
+    &__logo {
+        flex-basis 13%
+    }
+    &__menu {
+        flex-basis 62%
+    }
+    &__user {
+        flex-basis 25%
+        padding-top .5%
+    }
+}

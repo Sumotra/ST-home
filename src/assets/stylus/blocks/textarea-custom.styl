@@ -1,0 +1,24 @@
+.textarea-custom {
+    resize none
+    font-family $SSP
+    font-weight 400
+    font-size $textXs
+    color $darkText
+    padding 10px 20px
+    border 1px solid #C9C8CC
+    box-sizing border-box
+    background transparent
+    overflow auto
+    &:hover {
+        border-color $grayText
+    }
+    &:focus {
+        background #FFFFFF
+        outline none
+        border-color $grayText
+    }
+    @media screen and (max-width: 1200px) {
+        font-size @font-size - 2px
+        padding 10px 15px
+    }
+}

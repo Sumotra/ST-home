@@ -1,0 +1,57 @@
+.menu {
+    display flex
+    justify-content flex-start
+    padding-left 78px
+    @media screen and (max-width: 1600px) {
+        padding-left 30px
+    }
+    &__item {
+        list-style-type none
+        margin-right 25px
+        transform scaleY(1.1)
+        &:last-child {
+            margin-right 0
+        }
+        @media screen and (max-width: 1240px) {
+            margin-right 16px
+        }
+    }
+    &__link {
+        font-family $SSP
+        font-weight 400
+        font-size $textXs
+        line-height @font-size + 4px
+        color $darkText
+        text-decoration none
+        position relative
+        padding .5em 0
+        &:after {
+            content ''
+            height 0
+            background $mainPink
+            position absolute
+            right 0
+            bottom -30px
+            left 0
+            transition .2s ease
+            @media screen and (max-width: 1200px) {
+                bottom -23px
+            }  
+        }
+        &:hover {
+            color $mainPink
+            &:after {
+                height 5px
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            font-size @font-size - 2px
+        }
+    }
+    &__link_hovered {
+        color $mainPink
+        &:after {
+            height 5px
+        }
+    }
+}

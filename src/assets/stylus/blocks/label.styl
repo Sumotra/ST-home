@@ -1,0 +1,12 @@
+.label {
+    color rgba(171, 171, 171, 0.7)
+    font-family $SSP
+    font-weight 400
+    font-size $textXs
+    &:hover {
+        color $grayText
+    }
+    @media screen and (max-width: 1200px) {
+        font-size @font-size - 2px
+    }
+}

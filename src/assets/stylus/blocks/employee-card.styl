@@ -1,0 +1,142 @@
+.employee-card {
+    background linear-gradient(0deg, #FFFFFF, #FFFFFF)
+    border 1px solid #E4E4E4
+    box-sizing border-box
+    position relative
+    display flex
+    flex-direction column
+    justify-content space-between
+    text-decoration none
+    padding (30/1200*100)%
+    &:hover {
+        border 1px solid $mainPink
+        outline 1px solid $mainPink
+        box-shadow 0px 10px 25px rgba(5, 2, 13, 0.1)
+        &:before {
+            content ''
+            background url('/assets/img/arrow-right-pink.png') center center no-repeat
+            background-size contain
+            width 23px
+            height 16px
+            position absolute
+            top 28px
+            right (32/280*100)%
+            pointer-events none
+            @media screen and (max-width: 1200px) {
+                top 18px
+            }
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        padding (24/1200*100)%
+    }
+    &__top {
+        display flex
+        flex-direction column
+        flex 0 0 auto
+    }
+    &__bottom {
+        display flex
+        flex-direction column
+        justify-content flex-end
+        flex 1 0 auto
+    }
+    &__photo {
+        border-radius 50%
+        width 80px
+        height @width
+        margin-bottom 22px
+        box-shadow 0px 5px 10px rgba(7, 4, 18, 0.15)
+        @media screen and (max-width: 1440px) {
+            width 55px
+            height @width
+            margin-bottom 14px
+        }
+    }
+    &__name {
+        font-family $Roboto
+        font-size $textSm
+        line-height $textSm + 6px
+        font-weight 500
+        color $darkText
+        width 85%
+        margin-bottom 4px
+        @media screen and (max-width: 1200px) {
+            font-size @font-size - 4px
+            line-height @line-height - 4px
+        }
+    }
+    &__position {
+        font-family $SSP
+        font-size $textXs
+        line-height $textXs + 6px
+        font-weight 400
+        color $lightText
+        margin-bottom 10px
+        @media screen and (max-width: 1200px) {
+            font-size @font-size - 4px
+            line-height @line-height - 4px
+            margin-bottom 4px
+        }
+    }
+    &__department {
+        font-family $SSP
+        font-size $textXs
+        line-height $textXs + 6px
+        font-weight 400
+        color $grayText
+        @media screen and (max-width: 1200px) {
+            font-size @font-size - 4px
+            line-height @line-height - 4px
+        }
+    }
+    &__birthdate {
+        font-family $Roboto
+        font-size $textXs
+        line-height $textXs + 6px
+        font-weight 500
+        color $darkText
+        padding-left 22px
+        position relative
+        margin-top 24px
+        &:before {
+            content ''
+            width 16px
+            height @width
+            background url('/assets/img/gift.png') center center no-repeat
+            background-size contain
+            position absolute
+            left 0
+            @media screen and (max-width: 1200px) {
+                width 12px
+                height @width
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            font-size @font-size - 4px
+            line-height @line-height - 4px
+            margin-top 12px
+            padding-left 16px
+        }
+    }
+}
+
+.employee-card_hovered {
+    border 1px solid $mainPink
+    outline 1px solid $mainPink
+    box-shadow 0px 10px 25px rgba(5, 2, 13, 0.1)
+    &:before {
+        content ''
+        background url('/assets/img/arrow-right-pink.png') center center no-repeat
+        background-size contain
+        width 23px
+        height 16px
+        position absolute
+        top 28px
+        right (32/280*100)%
+        pointer-events none
+        @media screen and (max-width: 1200px) {
+            top 18px
+        }
+    }
+}
