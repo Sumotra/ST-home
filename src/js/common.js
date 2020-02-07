@@ -1,6 +1,6 @@
 $(document).ready(function($) {
 
-    var htmlPage = document.documentElement;
+    let htmlPage = document.documentElement;
 
 
     // close notification
@@ -32,7 +32,7 @@ $(document).ready(function($) {
 
 
     // Hover-effects
-    var hoverByClick = function(selector, hoverClass, _time) {
+    function hoverByClick(selector, hoverClass, _time) {
         $(selector).click(function() {
             $(this).addClass(hoverClass);
             setTimeout(function () {
